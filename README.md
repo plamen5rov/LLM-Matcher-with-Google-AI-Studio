@@ -4,8 +4,7 @@
 
 An intelligent system diagnostic tool that probes your hardware configuration (CPU, GPU, RAM) and uses Google's Gemini AI to recommend the most optimal Hugging Face LLM models for your specific setup.
 
-![App Screenshot](./screenshot.png)
-*Note: Save your screenshot as `screenshot.png` in the root directory.*
+![App Screenshot](screenshot.png)
 
 ## ✨ Features
 

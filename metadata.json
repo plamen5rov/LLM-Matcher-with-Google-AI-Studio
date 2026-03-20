@@ -1,0 +1,5 @@
+{
+  "name": "Hardware-Aware LLM Recommender",
+  "description": "Probes your system hardware and recommends the best Hugging Face LLM models for your configuration.",
+  "requestFramePermissions": []
+}

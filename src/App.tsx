@@ -170,9 +170,9 @@ export default function App() {
               href={import.meta.env.VITE_GITHUB_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-[#1D1D1F] text-white rounded-xl text-xs font-bold hover:bg-[#333] transition-all shadow-lg shadow-black/10"
+              className="flex items-center gap-3 px-8 py-4 bg-[#1D1D1F] text-white rounded-2xl text-base font-bold hover:bg-[#333] transition-all shadow-xl shadow-black/20"
             >
-              <Github size={14} />
+              <Github size={20} />
               View on GitHub
             </a>
           )}

@@ -197,8 +197,13 @@ export default function App() {
                     setUseCase(newUseCase);
                     if (specs) fetchRecommendations(specs, newUseCase);
                   }}
-                  className="w-full bg-transparent p-3 sm:p-4 text-sm sm:text-base font-semibold focus:outline-none appearance-none cursor-pointer"
-                  style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2.5\' d=\'M19 9l-7 7-7-7\'%3E%3C/path%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem sm:right 1.25rem center', backgroundSize: '1.2em' }}
+                  className="w-full bg-transparent p-3 sm:p-4 pr-10 sm:pr-12 text-sm sm:text-base font-semibold focus:outline-none appearance-none cursor-pointer"
+                  style={{ 
+                    backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2.5\' d=\'M19 9l-7 7-7-7\'%3E%3C/path%3E%3C/svg%3E")', 
+                    backgroundRepeat: 'no-repeat', 
+                    backgroundPosition: 'calc(100% - 1rem) center', 
+                    backgroundSize: '1.2em' 
+                  }}
                 >
                   {useCases.map((uc) => (
                     <option key={uc} value={uc} className="bg-white text-[#1D1D1F]">{uc}</option>

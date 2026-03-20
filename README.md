@@ -1,11 +1,11 @@
-# 🤖 Hardware-Aware LLM Recommender
+# 🤖 LLM Matcher
 
 > **Find your LLM model soulmate for your hardware.**
 
 An intelligent system diagnostic tool that probes your hardware configuration (CPU, GPU, RAM) and uses Google's Gemini AI to recommend the most optimal Hugging Face LLM models for your specific setup.
 
-![App Screenshot](https://picsum.photos/seed/hardware-llm/1200/600)
-*Note: Replace this with an actual screenshot of your application.*
+![App Screenshot](./screenshot.png)
+*Note: Save your screenshot as `screenshot.png` in the root directory.*
 
 ## ✨ Features
 

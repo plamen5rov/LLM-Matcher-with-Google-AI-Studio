@@ -16,7 +16,8 @@ import {
   ChevronRight,
   Activity,
   Bot,
-  Heart
+  Heart,
+  Github
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { getModelRecommendations, HardwareSpecs, ModelRecommendation } from './services/geminiService';
@@ -149,19 +150,32 @@ export default function App() {
             </div>
           </div>
           <div>
-            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#1D1D1F]">
-              LLM Matcher
-            </h1>
+            <div className="flex items-start gap-3">
+              <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-[#1D1D1F]">
+                LLM Matcher
+              </h1>
+              <div className="px-2 py-0.5 bg-white rounded-full border border-[#D2D2D7] shadow-sm flex items-center gap-1.5 mt-1 sm:mt-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-[9px] font-semibold uppercase tracking-wider text-[#86868B]">v1.0.8-PRO</span>
+              </div>
+            </div>
             <p className="text-xs sm:text-sm font-medium opacity-50 mt-1">
               Find your LLM model soulmate for your hardware.
             </p>
           </div>
         </div>
-        <div className="text-right hidden sm:block">
-          <div className="px-3 py-1 bg-white rounded-full border border-[#D2D2D7] shadow-sm inline-flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-[10px] font-semibold uppercase tracking-wider text-[#86868B]">v1.0.8-PRO</span>
-          </div>
+        <div className="hidden sm:block">
+          {import.meta.env.VITE_GITHUB_REPO_URL && (
+            <a 
+              href={import.meta.env.VITE_GITHUB_REPO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-[#1D1D1F] text-white rounded-xl text-xs font-bold hover:bg-[#333] transition-all shadow-lg shadow-black/10"
+            >
+              <Github size={14} />
+              View on GitHub
+            </a>
+          )}
         </div>
       </header>
 

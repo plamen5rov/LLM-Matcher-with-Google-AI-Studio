@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0A0A0B;
+    color: #F5F5F7;
+  }
+
+  /* Custom Scrollbar for Dark Mode */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0A0A0B;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1D1D1F;
+    border-radius: 5px;
+    border: 2px solid #0A0A0B;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2C2C2E;
+  }
+}

@@ -9,9 +9,10 @@ An intelligent system diagnostic tool that probes your hardware configuration (C
 ## ✨ Features
 
 - **Hardware Probing:** Real-time detection of system specifications (CPU cores, RAM, GPU availability).
-- **AI-Powered Recommendations:** Leverages Gemini 3.1 Flash to analyze hardware constraints and suggest compatible models.
+- **AI-Powered Recommendations:** Leverages Gemini 3 Flash to analyze hardware constraints and suggest compatible models.
 - **Use Case Optimization:** Tailor recommendations for General Chat, Coding, or Image/Video generation.
 - **Quantization Awareness:** Recommends specific quantization levels (4-bit, 8-bit, etc.) based on available VRAM/RAM.
+- **Shareable Reports:** Easily copy a formatted summary of your hardware and recommended models to share with others.
 - **Modern UI:** A sleek, dark-themed "Technical Dashboard" aesthetic built with Tailwind CSS and Motion.
 
 ## 🛠️ Tech Stack
@@ -19,7 +20,7 @@ An intelligent system diagnostic tool that probes your hardware configuration (C
 - **Frontend:** [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - **Build Tool:** [Vite 6](https://vitejs.dev/)
 - **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
-- **AI Engine:** [@google/genai](https://ai.google.dev/) (Gemini 3.1 Flash)
+- **AI Engine:** [@google/genai](https://ai.google.dev/) (Gemini 3 Flash)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Animations:** [Motion](https://motion.dev/)
 
@@ -64,6 +65,7 @@ An intelligent system diagnostic tool that probes your hardware configuration (C
 2. **Primary Objective:** Select your intended use case (e.g., General Chat, Coding).
 3. **Get Recommendations:** Click the "Analyze Hardware" button.
 4. **Explore Models:** Browse the AI-curated list of Hugging Face models, complete with reasoning and performance expectations.
+5. **Share Your Setup:** Use the "Share Setup" button to copy a detailed report to your clipboard.
 
 ## 📄 License
 
